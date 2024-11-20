@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 
 template <typename T>
@@ -35,7 +36,7 @@ public:
             _isEmpty = true;
             return _array[_top];
         }    
-        return _array[_top];
+        return _array[_top--];
     }
     T Check() const{
         return _array[_top];
@@ -53,7 +54,13 @@ public:
         delete [] arr;  
     }
 
+    size_t GetLenght()const{
+        return _size;
+    }
 
+    ~Stack(){
+        delete [] _array;
+    }
 
 
 };

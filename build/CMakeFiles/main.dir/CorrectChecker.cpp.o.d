@@ -1,6 +1,8 @@
-CMakeFiles/main.dir/main.cpp.o: /home/s23380424@unn.global/Stack/main.cpp \
- /usr/include/stdc-predef.h /home/s23380424@unn.global/Stack/Stack.h \
- /usr/include/c++/12/iostream \
+CMakeFiles/main.dir/CorrectChecker.cpp.o: \
+ /home/s23380424@unn.global/Stack/CorrectChecker.cpp \
+ /usr/include/stdc-predef.h \
+ /home/s23380424@unn.global/Stack/CorrectChecker.h \
+ /home/s23380424@unn.global/Stack/Stack.h /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -148,5 +150,4 @@ CMakeFiles/main.dir/main.cpp.o: /home/s23380424@unn.global/Stack/main.cpp \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
- /home/s23380424@unn.global/Stack/Formula.h \
- /home/s23380424@unn.global/Stack/CorrectChecker.h
+ /home/s23380424@unn.global/Stack/Table.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/s23380424@unn.global/stack
+# Install script for directory: /home/s23380424@unn.global/Stack
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/s23380424@unn.global/stack/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/s23380424@unn.global/Stack/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
