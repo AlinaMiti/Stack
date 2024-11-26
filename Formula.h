@@ -11,7 +11,7 @@ private:
     std::string _postfix; //постфиксная форма
 public:
     Formula(std::string exp);
-    bool CheckBrackets();  //проверка скобок. если не верно то std::cout << idite nahui
+    bool CheckBrackets();  //проверка скобок. если не верно то std::cout << error
     bool CheckFormula();   //проверка формулы пункт2
     void EnterVariableValues();  //заставить пользователя ввести значения переменных
     std::string BuildPostfix();

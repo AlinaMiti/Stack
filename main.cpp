@@ -6,7 +6,7 @@
 int main(){
     std::string s = "(a+b)+(c+(b-d))";
     CorrectChecker CC;
-    std::cout << "Trouble? " << (CC.CheckBrackets(s)?"No":"Yes") << std::endl;
+    std::cout << "Trouble?\n" << (CC.CheckBrackets(s)?"No":"Yes") << std::endl;
 
 
 

@@ -1,22 +1,23 @@
 #pragma once
 #include <iostream>
+#include <optional>
 
 template <typename T1, typename T2>
 
 class Table{
 private:
     size_t _tableSize;
-    T1* _col1;
-    T2* _col2;
+    std::optional<T1>* _col1;
+    std::optional<T2>* _col2;
     size_t _count;
 public:
     Table(size_t size = 20){
         _tableSize = size;
-        _col1 = new T1[_tableSize];
-        _col2 = new T2[_tableSize];
+        _col1 = new std::optional<T1>[_tableSize];
+        _col2 = new std::optional<T2>[_tableSize];
         _count = 0;
     }
-    void AppendRow(T1 t1, T2 t2){
+    void AppendRow(std::optional<T1> t1, std::optional<T2> t2){
         //std::obtional загуглить
 
         _col1[_count] = t1;
