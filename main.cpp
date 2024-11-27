@@ -1,16 +1,29 @@
 #include "Stack.h"
 #include "Formula.h"
 #include "CorrectChecker.h"
+#include "Table.h"
+#include <optional>
 
+std::optional<std::string> create(bool b){
+    if(b)
+        return "ghh";
+    return std::nullopt;
+}
 
 int main(){
-    std::string s = "(a+b)+(c+(b-d))";
+    std::string s = "(a+b)+c+b-d))";
     CorrectChecker CC;
-    std::cout << "Trouble?\n" << (CC.CheckBrackets(s)?"No":"Yes") << std::endl;
+    std::cout << "Trouble? \n" << (CC.CheckBrackets(s)?"No":"Yes") << std::endl;
 
 
 
 
+
+    // Table<std::string, double> arr("g", "h", 20);
+    // arr.AppendRow("a", 5);
+    // arr.AppendRow("d", 4.44);
+    // arr.AppendRow("cfg", 443);
+    // arr.Print();
 
 
 
