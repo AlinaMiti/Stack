@@ -186,7 +186,22 @@ CMakeFiles/main.dir/CorrectChecker.cpp.o: ../CorrectChecker.cpp \
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
-  ../Table.h
+  /usr/include/c++/12/optional \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  ../Table.h \
+  /usr/include/c++/12/iomanip \
+  /usr/include/c++/12/locale \
+  /usr/include/c++/12/bits/locale_facets_nonio.h \
+  /usr/include/c++/12/ctime \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/12/bits/locale_conv.h \
+  /usr/include/c++/12/bits/quoted_string.h \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc
 
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
   /usr/include/stdc-predef.h \
@@ -373,10 +388,44 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
   ../Formula.h \
-  ../CorrectChecker.h
+  ../CorrectChecker.h \
+  /usr/include/c++/12/optional \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  ../Table.h \
+  /usr/include/c++/12/iomanip \
+  /usr/include/c++/12/locale \
+  /usr/include/c++/12/bits/locale_facets_nonio.h \
+  /usr/include/c++/12/ctime \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/12/bits/locale_conv.h \
+  /usr/include/c++/12/bits/quoted_string.h \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc
 
 
 ../main.cpp:
+
+/usr/include/c++/12/sstream:
+
+/usr/include/c++/12/bits/locale_conv.h:
+
+/usr/include/c++/12/bits/locale_facets_nonio.tcc:
+
+/usr/include/c++/12/bits/codecvt.h:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h:
+
+/usr/include/c++/12/bits/locale_facets_nonio.h:
+
+/usr/include/c++/12/bits/enable_special_members.h:
+
+/usr/include/c++/12/ctime:
 
 /usr/include/c++/12/bits/basic_ios.tcc:
 
@@ -418,6 +467,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
+/usr/include/c++/12/locale:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
@@ -429,6 +480,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/c++/12/bits/sstream.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
@@ -449,6 +502,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/12/bits/alloc_traits.h:
 
 /usr/include/c++/12/ext/alloc_traits.h:
+
+/usr/include/c++/12/iomanip:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -515,6 +570,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 ../CorrectChecker.h:
+
+/usr/include/c++/12/bits/quoted_string.h:
 
 /usr/include/c++/12/new:
 
@@ -630,6 +687,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h:
 
+/usr/include/libintl.h:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h:
@@ -707,6 +766,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/12/bits/ostream_insert.h:
 
 ../Table.h:
+
+/usr/include/c++/12/optional:
 
 /usr/include/c++/12/bits/allocator.h:
 

@@ -149,4 +149,16 @@ CMakeFiles/main.dir/main.cpp.o: /home/s23380424@unn.global/Stack/main.cpp \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
  /home/s23380424@unn.global/Stack/Formula.h \
- /home/s23380424@unn.global/Stack/CorrectChecker.h
+ /home/s23380424@unn.global/Stack/CorrectChecker.h \
+ /usr/include/c++/12/optional \
+ /usr/include/c++/12/bits/enable_special_members.h \
+ /home/s23380424@unn.global/Stack/Table.h /usr/include/c++/12/iomanip \
+ /usr/include/c++/12/locale \
+ /usr/include/c++/12/bits/locale_facets_nonio.h /usr/include/c++/12/ctime \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/12/bits/codecvt.h \
+ /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/12/bits/locale_conv.h \
+ /usr/include/c++/12/bits/quoted_string.h /usr/include/c++/12/sstream \
+ /usr/include/c++/12/bits/sstream.tcc

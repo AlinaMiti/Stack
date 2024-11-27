@@ -1,5 +1,6 @@
 #pragma once
 #include "Stack.h"
+#include <optional>
 
 class CorrectChecker{
 private:
