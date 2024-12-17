@@ -11,10 +11,14 @@ std::optional<std::string> create(bool b){
 }
 
 int main(){
-    std::string s = "(a+b)+c+b-d))";
-    CorrectChecker CC;
-    std::cout << "Trouble? \n" << (CC.CheckBrackets(s)?"No":"Yes") << std::endl;
+    std::string s = "1+2/(3-3)";
+    // CorrectChecker CC;
+    // std::cout << (CC.CheckBrackets(s)?"No":"Yes") <<  " trouble \n" << std::endl;
+    // CorrectChecker y;
+    // y.FillVariable(s);
 
+    Formula g(s);
+    g.BuildPostfix();
 
 
 

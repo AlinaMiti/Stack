@@ -1,21 +1,37 @@
 #include "CorrectChecker.h"
 #include "Table.h"
+#include <ctype.h>
+#include <vector>
+#include <algorithm>
 
+CorrectChecker::CorrectChecker(): _brecketsTable("(", ")", 20), _brackets(), _varTable("variable", "value"){
+}
 
 bool CorrectChecker::CheckBrackets(const std::string& s){
-    Table<int, int> table1("(  ", ")  ", 20);
+    //Table<int, int> table1("(  ", ")  ", 20);
+    //_brecketsTable = table1;
+    int scob;
     for(size_t i = 0; i < s.size(); i++){
         if(s[i] == '('){
             _brackets.Push(i);
+            scob = i;
         }
         if(s[i] == ')'){
             try{
-                table1.AppendRow(_brackets.Pop(), i);
+                _brecketsTable.AppendRow(_brackets.Pop(), i);
+                int scob2 = i;
             }
             catch(const char* error_message){
-                table1.AppendRow(std::nullopt, i);
-                table1.Print();
-                std::cout << "Error is brackets" << std::endl;
+                _brecketsTable.AppendRow(std::nullopt, i);
+                _brecketsTable.Print();
+                std::cout << "Error is brackets: \n" << s <<std::endl;
+                int cnt = 0;
+                while(cnt < i){
+                    std::cout << " ";
+                    cnt++;
+                }
+                std::cout << "^" << std::endl;
+
                 return false;
             }
         }
@@ -23,16 +39,104 @@ bool CorrectChecker::CheckBrackets(const std::string& s){
     // bool isBracketsStackEmpty = _brackets.IsEmpty();
     // if(!isBracketsStackEmpty ){
         while (!_brackets.IsEmpty()){
-            table1.AppendRow(_brackets.Pop(), std::nullopt);
+            _brecketsTable.AppendRow(_brackets.Pop(), std::nullopt);
+
+            _brecketsTable.Print();
+            std::cout << "Error is brackets: \n" << s <<std::endl;
+            int cnt = 0;
+            while(cnt < scob){
+                std::cout << " ";
+                cnt++;
+            }
+            std::cout << "^" << std::endl;
+
+                
+            return false;
         }
     //}
 
-    table1.Print();
+    _brecketsTable.Print();
     return _brackets.IsEmpty();
+}
+
+bool CorrectChecker::CheckVariable(){
+    for(size_t i = 0; i < _varTable.GetCount(); i++ ){
+        if(_varTable.GetCol1()[i] == std::nullopt)
+            return false;
+        if(_varTable.GetCol2()[i] == std::nullopt)
+            return false;
+    }
+    return true;
+}
+
+void CorrectChecker::FillVariable(const std::string& s){
+    double var;
+    vector<char> val;
+    std::string Zn;
+    for(int i = 0; i < s.size(); i++){
+        char x = s[i];
+        if (std::isalpha((unsigned char)x)){
+            val.push_back(s[i]);
+        }
+    }
+    std::sort(begin(val), end(val));
+    val.erase(std::unique(begin(val), end(val)), end(val));
+    for(int i = 0; i < val.size(); i++){
+        std::cout << "enter value " << val[i] << std::endl;
+        std::cin >> Zn;
+        if(Zn == "no"){
+            _varTable.AppendRow(val[i], std::nullopt);
+        }
+        else{
+            var = std::stod(Zn);
+            _varTable.AppendRow(val[i], var);
+        }
+            
+    }
+    _varTable.Print();
+
+}
+
+const Table<char, double>& CorrectChecker::GetVarTable() const{
+    return _varTable;
+}
+
+
+bool CorrectChecker::GetState(){
+    return _state;
+}
+
+bool CorrectChecker::CheckFormula(const std::string& s){
+    std::string operazia{"*/-+^"};
+    if(!CheckVariable()){
+        _state = false;
+        return false;
+    }
+    if(!CheckBrackets(s)){
+        _state = false;
+        return false;
+    }
+    else{
+    for(int i = 1; i < s.size(); i++){
+        if(operazia.find(s[i]) != std::string::npos && operazia.find(s[i-1]) != std::string::npos){
+            _state = false;
+            return false;
+        }
+    }
+    for(size_t i = 1; i < s.size(); i++){
+        char x = s[i];
+        char y = s[i-1];
+        if (std::isalpha((unsigned char)x) && std::isalpha((unsigned char)y)){
+            _state = false;
+            return false;
+        }
+    }
+    }
+    //проверка скобок рядом () (*) (ф)
+    return true;
 }
 
 //пометить галочкой места, где проёб со скобками  (a-b)+c)
 //                                                       ^
-//запрос пользователю на ввод значений переменных и корректность ввода
 //таблица со скобками и ещё одна со значениями переменных
 //tab3["-"] табличка с приоритетами операций. 

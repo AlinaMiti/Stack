@@ -132,5 +132,33 @@ CMakeFiles/main.dir/CorrectChecker.cpp.obj: D:\Stack\CorrectChecker.cpp \
  C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/istream \
  C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/istream.tcc \
  D:\Stack\Table.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iomanip \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/locale \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/locale_facets_nonio.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/ctime \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/x86_64-w64-mingw32/include/time.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/codecvt.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/locale_facets_nonio.tcc \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/locale_conv.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/quoted_string.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/sstream \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/sstream.tcc \
  C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/optional \
- C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/enable_special_members.h
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/enable_special_members.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/vector \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_uninitialized.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_vector.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_bvector.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/vector.tcc \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/algorithm \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_algo.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/algorithmfwd.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_heap.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/uniform_int_dist.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_tempbuf.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/pstl/glue_algorithm_defs.h \
+ C:/Users/alina/Downloads/x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/pstl/execution_defs.h
