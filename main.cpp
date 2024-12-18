@@ -12,7 +12,7 @@ std::optional<std::string> create(bool b){
 
 int main(){
     std::string s = "(a+b)+c+b-d))";
-    CorrectChecker CC;
+    CorrectChecker CC(s);
     std::cout << "Trouble? \n" << (CC.CheckBrackets(s)?"No":"Yes") << std::endl;
 
 

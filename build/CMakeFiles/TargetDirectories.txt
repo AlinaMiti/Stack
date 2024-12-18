@@ -1,3 +1,0 @@
-/home/s23380424@unn.global/Stack/build/CMakeFiles/main.dir
-/home/s23380424@unn.global/Stack/build/CMakeFiles/edit_cache.dir
-/home/s23380424@unn.global/Stack/build/CMakeFiles/rebuild_cache.dir
