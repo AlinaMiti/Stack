@@ -45,9 +45,16 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp",
+<<<<<<< HEAD
         "ctime": "cpp",
         "iomanip": "cpp",
         "sstream": "cpp",
         "optional": "cpp"
+=======
+        "optional": "cpp",
+        "ctime": "cpp",
+        "iomanip": "cpp",
+        "sstream": "cpp"
+>>>>>>> 93f9488bfcd9dac535d24fa1b73b404019b332b9
     }
 }

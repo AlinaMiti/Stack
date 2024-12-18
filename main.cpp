@@ -11,13 +11,28 @@ std::optional<std::string> create(bool b){
 }
 
 int main(){
-    std::string s = "(a+b)+c+b-d))";
-    CorrectChecker CC(s);
-    std::cout << "Trouble? \n" << (CC.CheckBrackets(s)?"No":"Yes") << std::endl;
+    std::string s = "a-b*c+d/c";
+    // CorrectChecker CC;
+    // std::cout << (CC.CheckBrackets(s)?"No":"Yes") <<  " trouble \n" << std::endl;
+    CorrectChecker y;
+    y.FillVariable(s);
+    Table VarTable = y.GetVarTable();
+    //VarTable.Print();
+
+    Formula g(s);
+    g.BuildPostfix();
+
+    double res = g.Calculate(VarTable);
+    //std::cout << res << std::endl;
 
 
 
 
+    // Table<std::string, double> arr("g", "h", 20);
+    // arr.AppendRow("a", 5);
+    // arr.AppendRow("d", 4.44);
+    // arr.AppendRow("cfg", 443);
+    // arr.Print();
 
     // Table<std::string, double> arr("g", "h", 20);
     // arr.AppendRow("a", 5);

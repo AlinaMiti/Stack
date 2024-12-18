@@ -1,18 +1,21 @@
 #pragma once
 #include "Stack.h"
-#include <optional>
 #include "Table.h"
 
 class CorrectChecker{
 private:
     Stack<int> _brackets;
-    Table<int,int> _bracketsTable; //заполняем в этом классе
-    Table<string, double> _varTable;
-    bool _state = false; //если все проверки прошли он будет true
+    Table<char, double> _varTable;
+    Table<int, int> _brecketsTable;
+    bool _state = false;
 public:
+    CorrectChecker();
     bool CheckBrackets(const std::string& s);
-    bool CheckVariable();    //проверка таблицы на заполненность
-    void FillVariable(); 
-    bool CheckFormula (const string&);
+    bool CheckVariable();
+    bool GetState();
+    void FillVariable(const std::string& s);
+    bool CheckFormula(const std::string& s); //2 пункт
+    const Table<char, double>& GetVarTable() const;
+
+
 };
-//гет для возвращения таблицы. с константной ссылкой
