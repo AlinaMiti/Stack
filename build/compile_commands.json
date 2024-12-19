@@ -1,12 +1,14 @@
 [
 {
-  "directory": "/home/s23380424@unn.global/Stack/build",
-  "command": "/usr/bin/g++-12    -std=c++17 -g -o CMakeFiles/main.dir/main.cpp.o -c /home/s23380424@unn.global/Stack/main.cpp",
-  "file": "/home/s23380424@unn.global/Stack/main.cpp"
+  "directory": "D:/Stack/build",
+  "command": "C:\\Users\\alina\\Downloads\\x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0\\mingw64\\bin\\g++.exe    -std=c++17 -g -o CMakeFiles\\main.dir\\main.cpp.obj -c D:\\Stack\\main.cpp",
+  "file": "D:/Stack/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.obj"
 },
 {
-  "directory": "/home/s23380424@unn.global/Stack/build",
-  "command": "/usr/bin/g++-12    -std=c++17 -g -o CMakeFiles/main.dir/CorrectChecker.cpp.o -c /home/s23380424@unn.global/Stack/CorrectChecker.cpp",
-  "file": "/home/s23380424@unn.global/Stack/CorrectChecker.cpp"
+  "directory": "D:/Stack/build",
+  "command": "C:\\Users\\alina\\Downloads\\x86_64-13.2.0-release-win32-seh-ucrt-rt_v11-rev0\\mingw64\\bin\\g++.exe    -std=c++17 -g -o CMakeFiles\\main.dir\\CorrectChecker.cpp.obj -c D:\\Stack\\CorrectChecker.cpp",
+  "file": "D:/Stack/CorrectChecker.cpp",
+  "output": "CMakeFiles/main.dir/CorrectChecker.cpp.obj"
 }
 ]

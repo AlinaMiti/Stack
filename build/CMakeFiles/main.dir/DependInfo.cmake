@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/s23380424@unn.global/Stack/CorrectChecker.cpp" "CMakeFiles/main.dir/CorrectChecker.cpp.o" "gcc" "CMakeFiles/main.dir/CorrectChecker.cpp.o.d"
-  "/home/s23380424@unn.global/Stack/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "D:/Stack/CorrectChecker.cpp" "CMakeFiles/main.dir/CorrectChecker.cpp.obj" "gcc" "CMakeFiles/main.dir/CorrectChecker.cpp.obj.d"
+  "D:/Stack/main.cpp" "CMakeFiles/main.dir/main.cpp.obj" "gcc" "CMakeFiles/main.dir/main.cpp.obj.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

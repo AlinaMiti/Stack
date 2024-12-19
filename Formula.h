@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include "CorrectChecker.h"
+#include <cmath>
 
 
 class Formula{
@@ -23,11 +24,12 @@ public:
         _prior.AppendRow('-', 2);
         _prior.AppendRow('*', 3);
         _prior.AppendRow('/', 3);
+        _prior.AppendRow('^', 4);
     }
     void EnterVariableValues(const std::string& s);//заставить пользователя ввести значения переменных
     
     void BuildPostfix(){
-        std::string operazia{"()+-*/"};
+        std::string operazia{"()+-*/^"};
         for(int i = 0; i < _expression.size(); i++){
             if(operazia.find(_expression[i]) != std::string::npos){
                 if(_prior[_expression[i]].value() == 0 || _prior[_expression[i]].value() > _prior[_calcStack.Check()].value() || _calcStack.IsEmpty()){
@@ -68,42 +70,53 @@ public:
             _calcStack.Pop();
         }
     }
-    std::cout << _postfix << std::endl;
+    //std::cout << _postfix << std::endl;
     }
     double Calculate(Table<char, double> varTable){ //счёт значения
-        //BuildPostfix();
-        std::cout << _postfix << std::endl;
-        // CorrectChecker y;
+        BuildPostfix();
+        //std::cout << _postfix << std::endl;
+        //CorrectChecker y;
         // Table<char, double> varTable = y.GetVarTable();
+        // if(y.GetState() == false)
+        //     throw "Error in the formula";
+
         Stack<double> stack;
         double oper1 = 0;
         double oper2 = 0;
-        std::string operazia{"()+-*/"};
+        std::string operazia{"()+-*/^"};
         for(size_t i = 0; i < _postfix.length(); i++){
             if(operazia.find(_postfix[i]) == std::string::npos){
-                //std::string tmp {_postfix[i]};
                 stack.Push(varTable[_postfix[i]].value());
             }
             else{
                 oper2 = stack.Pop();
                 oper1 = stack.Pop();
                 double res;
-                if(_postfix[i] == '-')
-                    double res = oper1 - oper2;
-                if(_postfix[i] == '+'){
-                    double res = oper1 + oper2;
+                switch (_postfix[i])
+                {
+                case '-':
+                    res = oper1 - oper2;
+                    break;
+                case '+':
+                    res = oper1 + oper2;
+                    break;
+                case '*':
+                    res = oper1 * oper2;
+                    break;
+                case '/':
+                    res = oper1 / oper2;
+                    break;
+                case '^':
+                    res = std::pow(oper1,oper2);
+                    break;
+                default:
+                    break;
                 }
-                    
-                if(_postfix[i] == '*')
-                    double res = oper1 * oper2;
-                if(_postfix[i] == '/')
-                    double res = oper1 / oper2;
-                
                 stack.Push(res);
             }
         }
         double resOp = stack.Pop();
-        std::cout << resOp << std::endl;
+        //std::cout << resOp << std::endl;
         return resOp;
     }
 };

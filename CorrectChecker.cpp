@@ -4,9 +4,8 @@
 #include <vector>
 #include <algorithm>
 
-CorrectChecker::CorrectChecker(): _brecketsTable("(", ")", 20), _brackets(), _varTable("variable", "value"){
+CorrectChecker::CorrectChecker(): _brecketsTable("(", ")", 20), _brackets(), _varTable("var", "value"){
 }
-
 
 bool CorrectChecker::CheckBrackets(const std::string& s){
     //Table<int, int> table1("(  ", ")  ", 20);
@@ -132,10 +131,24 @@ bool CorrectChecker::CheckFormula(const std::string& s){
             return false;
         }
     }
+    for(size_t i = 0; i < s.size()-2; i++){
+        if(s[i] == '(' && (s[i+2] == ')' || s[i+1] == ')')){
+            _state = false;
+            return false;
+        }
     }
-    //проверка скобок рядом () (*) (ф)
+    }
     return true;
 }
+
+
+
+
+
+
+
+
+
 
 //пометить галочкой места, где проёб со скобками  (a-b)+c)
 //                                                       ^
